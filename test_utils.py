@@ -37,7 +37,7 @@ def test_divide(a, b, expected):
 
 
 @pytest.mark.parametrize(
-    "a, expected ", [(1, 1), (3, 11), (16, 10000), (89, 1011001), (100, 1100100), (-2, 0), (101, 0), (200, 0)]
+    "a, expected ", [(1, '1'), (3, '11'), (16, '10000'), (89, '1011001'), (100, '1100100'), (-2, '0'), (101, '0'), (200, '0')]
 )
 def test_dec2bin(a, expected):
     result = utils.dec2bin(a)
