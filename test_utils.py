@@ -34,3 +34,21 @@ def test_multiply(a, b, expected):
 def test_divide(a, b, expected):
     result = utils.divide(a, b)
     assert result == expected
+
+
+@pytest.mark.parametrize(
+    "a, expected ",
+    [
+        (1, "1"),
+        (3, "11"),
+        (16, "10000"),
+        (89, "1011001"),
+        (100, "1100100"),
+        (-2, "Range error!"),
+        (101, "Range error!"),
+        (200, "Range error!"),
+    ],
+)
+def test_dec2bin(a, expected):
+    result = utils.dec2bin(a)
+    assert result == expected
