@@ -22,3 +22,8 @@ def divide(a: int, b: int) -> float:
         return 0
 
     return a / b
+
+
+def dec2bin(a: int) -> int:
+    """Function for converting an integer to binary in range <0, 100>"""
+    return 0
